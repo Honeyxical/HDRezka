@@ -1,14 +1,14 @@
 import Foundation
 
-protocol StorageProtocol: class{
+protocol StorageProtocol{
     var userDictionary: Dictionary<String, String> {get set}
     
     func login(user: UserProtocol) -> Bool
-    func registration(user: UserProtocol)
+    mutating func registration(user: UserProtocol) -> Bool
 }
 
-class Storage: StorageProtocol{
-    var userDictionary: Dictionary<String, String> = ["as":"as"]
+struct Storage: StorageProtocol{
+    var userDictionary: Dictionary<String, String>
     
     func login(user: UserProtocol) -> Bool{
         if userDictionary[user.login] == user.password{
@@ -18,9 +18,11 @@ class Storage: StorageProtocol{
         
     }
     
-    func registration(user: UserProtocol){
-        userDictionary[user.login] = user.password
+    mutating func registration(user: UserProtocol) -> Bool{
+        if userDictionary[user.login] == nil {
+            userDictionary[user.login] = user.password
+            return true
+        }
+        return false
     }
-    
-    
 }

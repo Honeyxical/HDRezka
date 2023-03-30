@@ -6,7 +6,7 @@ protocol UserProtocol{
     var email: String {get set}
     var password: String {get set}
     
-    func registration(user: UserProtocol)
+    func registration(user: UserProtocol) -> Bool
     func login(user: UserProtocol) -> Bool
 }
 
@@ -15,7 +15,7 @@ class User: UserProtocol{
     var nickname: String = ""
     var email: String = ""
     var password: String = ""
-    var storage = Storage()
+//    var storage = Storage()
     
     init(){}
     
@@ -31,11 +31,13 @@ class User: UserProtocol{
         self.password = password
     }
     
-    func registration(user: UserProtocol) {
-        storage.registration(user: user)
+    func registration(user: UserProtocol) -> Bool {
+//        return storage.registration(user: user)
+        return true
     }
     
     func login(user: UserProtocol) -> Bool{
-        return storage.login(user: user)
+//        return storage.login(user: user)
+        return true
     }
 }

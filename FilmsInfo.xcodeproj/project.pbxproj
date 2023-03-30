@@ -15,13 +15,16 @@
 		69A8538C29D0845600254920 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A8538B29D0845600254920 /* LoginController.swift */; };
 		69A8538E29D0846800254920 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A8538D29D0846800254920 /* RegistrationController.swift */; };
 		69A8539029D0849200254920 /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A8538F29D0849200254920 /* AuthController.swift */; };
-		69A8539329D0850600254920 /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A8539229D0850600254920 /* MessageController.swift */; };
 		69A8539529D19B3600254920 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A8539429D19B3600254920 /* User.swift */; };
 		69A8539729D19C2300254920 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A8539629D19C2300254920 /* Storage.swift */; };
+		69A8539B29D1BCFA00254920 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A8539A29D1BCFA00254920 /* Tools.swift */; };
+		69D6343829D5846400E5C6C1 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D6343729D5846400E5C6C1 /* Film.swift */; };
+		69D6343A29D584B200E5C6C1 /* FilmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D6343929D584B200E5C6C1 /* FilmController.swift */; };
+		69D6343C29D5AEC300E5C6C1 /* FilmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D6343B29D5AEC300E5C6C1 /* FilmTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		69A8536D29D079DB00254920 /* HDRezka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDRezka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A8536D29D079DB00254920 /* FilmsInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmsInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A8537029D079DB00254920 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69A8537229D079DB00254920 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		69A8537729D079DB00254920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,9 +34,12 @@
 		69A8538B29D0845600254920 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		69A8538D29D0846800254920 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		69A8538F29D0849200254920 /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
-		69A8539229D0850600254920 /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
 		69A8539429D19B3600254920 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		69A8539629D19C2300254920 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		69A8539A29D1BCFA00254920 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		69D6343729D5846400E5C6C1 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		69D6343929D584B200E5C6C1 /* FilmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmController.swift; sourceTree = "<group>"; };
+		69D6343B29D5AEC300E5C6C1 /* FilmTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +64,7 @@
 		69A8536E29D079DB00254920 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				69A8536D29D079DB00254920 /* HDRezka.app */,
+				69A8536D29D079DB00254920 /* FilmsInfo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,6 +72,8 @@
 		69A8536F29D079DB00254920 /* HDRezka */ = {
 			isa = PBXGroup;
 			children = (
+				69D6343629D5845600E5C6C1 /* Model */,
+				69A8539929D1BCE800254920 /* Helpers */,
 				69A8538A29D0826400254920 /* Applications */,
 				69A8538929D0825A00254920 /* Views */,
 				69A8538829D081F200254920 /* Controllers */,
@@ -111,7 +119,8 @@
 				69A8538B29D0845600254920 /* LoginController.swift */,
 				69A8538D29D0846800254920 /* RegistrationController.swift */,
 				69A8538F29D0849200254920 /* AuthController.swift */,
-				69A8539229D0850600254920 /* MessageController.swift */,
+				69D6343929D584B200E5C6C1 /* FilmController.swift */,
+				69D6343B29D5AEC300E5C6C1 /* FilmTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -130,12 +139,28 @@
 			path = Applications;
 			sourceTree = "<group>";
 		};
+		69A8539929D1BCE800254920 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				69A8539A29D1BCFA00254920 /* Tools.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		69D6343629D5845600E5C6C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				69D6343729D5846400E5C6C1 /* Film.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		69A8536C29D079DB00254920 /* HDRezka */ = {
+		69A8536C29D079DB00254920 /* FilmsInfo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 69A8538129D079DC00254920 /* Build configuration list for PBXNativeTarget "HDRezka" */;
+			buildConfigurationList = 69A8538129D079DC00254920 /* Build configuration list for PBXNativeTarget "FilmsInfo" */;
 			buildPhases = (
 				69A8536929D079DB00254920 /* Sources */,
 				69A8536A29D079DB00254920 /* Frameworks */,
@@ -145,9 +170,9 @@
 			);
 			dependencies = (
 			);
-			name = HDRezka;
+			name = FilmsInfo;
 			productName = HDRezka;
-			productReference = 69A8536D29D079DB00254920 /* HDRezka.app */;
+			productReference = 69A8536D29D079DB00254920 /* FilmsInfo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -165,7 +190,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 69A8536829D079DB00254920 /* Build configuration list for PBXProject "HDRezka" */;
+			buildConfigurationList = 69A8536829D079DB00254920 /* Build configuration list for PBXProject "FilmsInfo" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -178,7 +203,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				69A8536C29D079DB00254920 /* HDRezka */,
+				69A8536C29D079DB00254920 /* FilmsInfo */,
 			);
 		};
 /* End PBXProject section */
@@ -202,11 +227,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				69A8538C29D0845600254920 /* LoginController.swift in Sources */,
-				69A8539329D0850600254920 /* MessageController.swift in Sources */,
 				69A8539529D19B3600254920 /* User.swift in Sources */,
+				69D6343C29D5AEC300E5C6C1 /* FilmTableViewController.swift in Sources */,
 				69A8537129D079DB00254920 /* AppDelegate.swift in Sources */,
+				69D6343A29D584B200E5C6C1 /* FilmController.swift in Sources */,
 				69A8539029D0849200254920 /* AuthController.swift in Sources */,
+				69D6343829D5846400E5C6C1 /* Film.swift in Sources */,
 				69A8539729D19C2300254920 /* Storage.swift in Sources */,
+				69A8539B29D1BCFA00254920 /* Tools.swift in Sources */,
 				69A8538E29D0846800254920 /* RegistrationController.swift in Sources */,
 				69A8537329D079DB00254920 /* SceneDelegate.swift in Sources */,
 			);
@@ -419,7 +447,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		69A8536829D079DB00254920 /* Build configuration list for PBXProject "HDRezka" */ = {
+		69A8536829D079DB00254920 /* Build configuration list for PBXProject "FilmsInfo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				69A8537F29D079DC00254920 /* Debug */,
@@ -428,7 +456,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		69A8538129D079DC00254920 /* Build configuration list for PBXNativeTarget "HDRezka" */ = {
+		69A8538129D079DC00254920 /* Build configuration list for PBXNativeTarget "FilmsInfo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				69A8538229D079DC00254920 /* Debug */,
